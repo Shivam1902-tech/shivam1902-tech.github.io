@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #222;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  background: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.project {
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #e9ecef;
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  margin-top: 20px;
+}
