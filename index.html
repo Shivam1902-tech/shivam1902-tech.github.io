@@ -8,19 +8,23 @@
 </head>
 <body>
 
+  <!-- DARK MODE TOGGLE -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero fade-in">
     <h1>Shivam Yadav</h1>
     <p>Flutter App Developer | ECE Undergraduate</p>
 
     <div class="hero-links">
       <a href="https://github.com/Shivam1902-tech" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/shivam1902/" target="_blank">LinkedIn</a>
+      <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
     </div>
   </header>
 
   <!-- ABOUT -->
-  <section>
+  <section class="fade-in">
     <h2>About Me</h2>
     <p>
       I am a 3rd-year Electronics and Communication Engineering student with hands-on
@@ -31,7 +35,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section>
+  <section class="fade-in">
     <h2>Projects</h2>
 
     <div class="projects-grid">
@@ -43,24 +47,24 @@
 
       <div class="project-card">
         <h3>Life Simulator</h3>
-        <p>Decision-based Flutter app simulating daily life choices and stat tracking.</p>
+        <p>Decision-based Flutter app simulating daily life choices.</p>
         <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">View on GitHub</a>
       </div>
 
       <div class="project-card">
         <h3>Signal Generator & Plotter</h3>
-        <p>Python tool to generate and visualize basic signals with adjustable parameters.</p>
+        <p>Python tool for generating and visualizing signals.</p>
       </div>
 
       <div class="project-card">
         <h3>Digital Modulation Visualizer</h3>
-        <p>Python-based visualization of ASK, FSK, and BPSK modulation schemes.</p>
+        <p>Python visualization of ASK, FSK, and BPSK schemes.</p>
       </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section>
+  <section class="fade-in">
     <h2>Skills</h2>
     <ul class="skills">
       <li>Flutter</li>
@@ -74,17 +78,22 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section class="contact fade-in">
     <h2>Contact</h2>
-
     <p>Email: <a href="mailto:sy9202150@gmail.com">sy9202150@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Shivam1902-tech" target="_blank">github.com/Shivam1902-tech</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/shivam1902/" target="_blank">linkedin.com/in/shivam1902</a></p>
+    <p>GitHub: <a href="https://github.com/Shivam1902-tech" target="_blank">Shivam1902-tech</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/shivam1902/" target="_blank">shivam1902</a></p>
   </section>
 
   <footer>
     <p>© 2025 Shivam Yadav</p>
   </footer>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+</script>
 
 </body>
 </html>
