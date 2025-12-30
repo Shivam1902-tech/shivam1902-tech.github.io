@@ -6,10 +6,11 @@
   <title>Shivam Yadav | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- DARK MODE TOGGLE -->
-  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+  <button class="theme-toggle" id="themeToggle">🌙</button>
 
   <!-- HERO -->
   <header class="hero fade-in">
@@ -19,7 +20,9 @@
     <div class="hero-links">
       <a href="https://github.com/Shivam1902-tech" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/shivam1902/" target="_blank">LinkedIn</a>
-      <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
+      <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">
+        Download Resume
+      </a>
     </div>
   </header>
 
@@ -42,13 +45,17 @@
       <div class="project-card">
         <h3>Nostalgia</h3>
         <p>Flutter-based Android app focused on memory-driven user experience.</p>
-        <a href="https://github.com/Shivam1902-tech/nostalgia-app" target="_blank">View on GitHub</a>
+        <a href="https://github.com/Shivam1902-tech/nostalgia-app" target="_blank">
+          View on GitHub
+        </a>
       </div>
 
       <div class="project-card">
         <h3>Life Simulator</h3>
         <p>Decision-based Flutter app simulating daily life choices.</p>
-        <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">View on GitHub</a>
+        <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">
+          View on GitHub
+        </a>
       </div>
 
       <div class="project-card">
@@ -89,25 +96,28 @@
     <p>© 2025 Shivam Yadav</p>
   </footer>
 
-<script>
-  const body = document.body;
+  <!-- DARK MODE SCRIPT (MOBILE SAFE) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const body = document.body;
+      const toggleBtn = document.getElementById("themeToggle");
 
-  // Load saved theme on page load
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark");
-  }
+      // Load saved theme
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark");
+      }
 
-  function toggleTheme() {
-    body.classList.toggle("dark");
+      toggleBtn.addEventListener("click", function () {
+        body.classList.toggle("dark");
 
-    // Save preference
-    if (body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  }
-</script>
+        if (body.classList.contains("dark")) {
+          localStorage.setItem("theme", "dark");
+        } else {
+          localStorage.setItem("theme", "light");
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
