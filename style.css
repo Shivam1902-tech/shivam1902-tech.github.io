@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
@@ -30,6 +31,38 @@ body.dark {
   z-index: 999;
 }
 
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 998;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 12px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e3c72;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode navbar */
+body.dark .navbar {
+  background: rgba(15, 23, 42, 0.95);
+}
+
+body.dark .navbar a {
+  color: #93c5fd;
+}
+
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -49,7 +82,7 @@ body.dark {
   opacity: 0.9;
 }
 
-/* HERO LINKS BASE (IMPORTANT FIX) */
+/* HERO LINKS */
 .hero-links {
   display: flex;
   justify-content: center;
@@ -62,7 +95,7 @@ body.dark {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
 }
 
@@ -82,6 +115,18 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* SKILL CATEGORY HEADINGS */
+h4 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #1e3c72;
+  font-weight: 600;
+}
+
+body.dark h4 {
+  color: #93c5fd;
+}
+
 /* PROJECTS */
 .projects-grid {
   display: grid;
@@ -93,12 +138,23 @@ h2 {
   background: #ffffff;
   padding: 22px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+}
+
+.project-card p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
+}
+
+/* DARK MODE CARD FIX */
+body.dark .project-card,
+body.dark footer {
+  background: #020617;
 }
 
 /* SKILLS */
@@ -137,12 +193,6 @@ footer {
   background: #ffffff;
 }
 
-/* DARK MODE CARD FIX */
-body.dark .project-card,
-body.dark footer {
-  background: #020617;
-}
-
 /* FADE IN */
 .fade-in {
   animation: fadeInUp 0.8s ease both;
@@ -159,7 +209,7 @@ body.dark footer {
   }
 }
 
-/* ===== MOBILE FIXES (FINAL) ===== */
+/* ===== MOBILE FIXES ===== */
 @media screen and (max-width: 600px) {
 
   .hero {
@@ -186,4 +236,9 @@ body.dark footer {
     padding: 14px 0;
   }
 
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.95rem;
+  }
 }

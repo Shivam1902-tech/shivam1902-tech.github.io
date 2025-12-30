@@ -12,6 +12,15 @@
   <!-- DARK MODE TOGGLE -->
   <button class="theme-toggle" id="themeToggle">🌙</button>
 
+  <!-- NAV BAR -->
+  <nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <!-- HERO -->
   <header class="hero fade-in">
     <h1>Shivam Yadav</h1>
@@ -27,65 +36,140 @@
   </header>
 
   <!-- ABOUT -->
-  <section class="fade-in">
+  <section id="about" class="fade-in">
     <h2>About Me</h2>
+
     <p>
       I am a 3rd-year Electronics and Communication Engineering student with hands-on
-      experience in Flutter app development and Python-based projects.
-      I focus on building real-world applications and strengthening my fundamentals
-      in digital systems and signals.
+      experience in Flutter app development and Python-based projects. I enjoy building
+      real-world applications that combine clean UI with logic-driven functionality.
+    </p>
+
+    <p>
+      Alongside app development, I have worked on Python projects related to signals and
+      digital communication, which has strengthened my problem-solving skills and core
+      engineering fundamentals. I focus on learning by building, experimenting, and
+      improving my projects with each iteration.
     </p>
   </section>
 
   <!-- PROJECTS -->
-  <section class="fade-in">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
 
     <div class="projects-grid">
+
       <div class="project-card">
         <h3>Nostalgia</h3>
-        <p>Flutter-based Android app focused on memory-driven user experience.</p>
-        <a href="https://github.com/Shivam1902-tech/nostalgia-app" target="_blank">
-          View on GitHub
-        </a>
+        <p>
+          A Flutter-based Android application focused on memory-driven user experience.
+          Built with clean UI, smooth navigation, and proper asset management.
+        </p>
+        <p><strong>Tech:</strong> Flutter, Dart</p>
+        <p><strong>What I learned:</strong> App structuring, UI consistency, APK build & testing</p>
+        <a href="https://github.com/Shivam1902-tech/nostalgia-app" target="_blank">GitHub</a>
       </div>
 
       <div class="project-card">
         <h3>Life Simulator</h3>
-        <p>Decision-based Flutter app simulating daily life choices.</p>
-        <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">
-          View on GitHub
-        </a>
+        <p>
+          Decision-based Android app that simulates daily life choices and dynamically
+          updates life statistics.
+        </p>
+        <p><strong>Tech:</strong> Flutter, Dart</p>
+        <p><strong>What I learned:</strong> Logic-driven features, reusable widgets</p>
+        <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">GitHub</a>
       </div>
 
       <div class="project-card">
         <h3>Signal Generator & Plotter</h3>
-        <p>Python tool for generating and visualizing signals.</p>
+        <p>
+          Python application to generate and visualize sine, square, and triangular signals
+          with adjustable parameters.
+        </p>
+        <p><strong>Tech:</strong> Python, NumPy, Matplotlib</p>
+        <p><strong>What I learned:</strong> Signal modeling, plotting, parameter control</p>
       </div>
 
       <div class="project-card">
         <h3>Digital Modulation Visualizer</h3>
-        <p>Python visualization of ASK, FSK, and BPSK schemes.</p>
+        <p>
+          Python-based visualization tool for ASK, FSK, and BPSK digital modulation techniques.
+        </p>
+        <p><strong>Tech:</strong> Python, NumPy, Matplotlib</p>
+        <p><strong>What I learned:</strong> Digital communication concepts, waveform analysis</p>
       </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="fade-in">
+    <h2>Experience</h2>
+
+    <div class="project-card">
+      <h3>Research Head — Association for Cyber Security (ACS)</h3>
+      <p>
+        Led research-oriented technical activities related to digital systems and logic design.
+        Worked on analysis, documentation, and technical exploration.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Content Writing Intern — InAmigoes</h3>
+      <p>
+        Created and edited digital content, improving structured communication and consistency
+        in a professional work environment.
+      </p>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="fade-in">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Flutter</li>
-      <li>Dart</li>
-      <li>Python</li>
-      <li>Android Development</li>
-      <li>Digital Logic</li>
-      <li>Signals & Systems</li>
-      <li>Git & GitHub</li>
-    </ul>
+  <section id="skills" class="fade-in">
+  <h2>Skills</h2>
+
+  <h4>App Development</h4>
+  <ul class="skills">
+    <li>Flutter</li>
+    <li>Dart</li>
+    <li>Android App Development</li>
+    <li>UI Development</li>
+  </ul>
+
+  <h4>Programming</h4>
+  <ul class="skills">
+    <li>Python</li>
+    <li>C++ (Basic)</li>
+  </ul>
+
+  <h4>ECE Fundamentals</h4>
+  <ul class="skills">
+    <li>Digital Logic</li>
+    <li>Signals & Systems</li>
+    <li>Communication Engineering</li>
+  </ul>
+
+  <h4>Tools</h4>
+  <ul class="skills">
+    <li>Git & GitHub</li>
+    <li>MATLAB</li>
+    <li>Arduino</li>
+  </ul>
+</section>
+
+
+  <!-- RESUME -->
+  <section id="resume" class="fade-in">
+    <h2>Resume</h2>
+    <p>You can view or download my resume below.</p>
+
+    <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">
+      View Resume
+    </a>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact fade-in">
+  <section id="contact" class="contact fade-in">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:sy9202150@gmail.com">sy9202150@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/Shivam1902-tech" target="_blank">Shivam1902-tech</a></p>
@@ -96,13 +180,12 @@
     <p>© 2025 Shivam Yadav</p>
   </footer>
 
-  <!-- DARK MODE SCRIPT (MOBILE SAFE) -->
+  <!-- DARK MODE SCRIPT -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const body = document.body;
       const toggleBtn = document.getElementById("themeToggle");
 
-      // Load saved theme
       if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark");
       }
