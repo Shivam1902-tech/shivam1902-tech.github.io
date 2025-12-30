@@ -241,4 +241,12 @@ footer {
     gap: 15px;
     font-size: 0.95rem;
   }
+
+  /* Dark mode toggle mobile fix */
+  .theme-toggle {
+    top: 70px;
+    right: 14px;
+    padding: 8px;
+    font-size: 1rem;
+  }
 }
