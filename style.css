@@ -107,6 +107,14 @@ section {
   background: #e0eafc;
 }
 
+/* DARK MODE SKILLS FIX */
+body.dark .skills li {
+  background: #1e293b;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+
 /* FADE IN ANIMATION */
 .fade-in {
   animation: fadeInUp 0.8s ease both;
