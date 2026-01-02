@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Shivam Yadav | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Shivam Yadav – Flutter App Developer and ECE Undergraduate">
+
+  <!-- CACHE-BUSTED CSS (IMPORTANT) -->
+  <link rel="stylesheet" href="style.css?v=2026" />
+
 </head>
 
 <body>
 
   <!-- DARK MODE TOGGLE -->
-  <button class="theme-toggle" id="themeToggle">🌙</button>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    🌙
+  </button>
 
   <!-- NAV BAR -->
   <nav class="navbar">
@@ -18,6 +25,7 @@
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -27,9 +35,13 @@
     <p>Flutter App Developer | ECE Undergraduate</p>
 
     <div class="hero-links">
-      <a href="https://github.com/Shivam1902-tech" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/shivam1902/" target="_blank">LinkedIn</a>
-      <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">
+      <a href="https://github.com/Shivam1902-tech" target="_blank" rel="noopener">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/shivam1902/" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+      <a href="resume/ShivamResume.pdf" target="_blank" class="resume-btn">
         Download Resume
       </a>
     </div>
@@ -38,18 +50,13 @@
   <!-- ABOUT -->
   <section id="about" class="fade-in">
     <h2>About Me</h2>
-
     <p>
-      I am a 3rd-year Electronics and Communication Engineering student with hands-on
-      experience in Flutter app development and Python-based projects. I enjoy building
-      real-world applications that combine clean UI with logic-driven functionality.
+      I am a 3rd-year Electronics and Communication Engineering student with hands-on experience
+      in Flutter app development and Python-based projects.
     </p>
-
     <p>
-      Alongside app development, I have worked on Python projects related to signals and
-      digital communication, which has strengthened my problem-solving skills and core
-      engineering fundamentals. I focus on learning by building, experimenting, and
-      improving my projects with each iteration.
+      I enjoy building real-world applications that combine clean UI with logic-driven functionality,
+      along with Python projects related to signals and digital communication.
     </p>
   </section>
 
@@ -59,45 +66,51 @@
 
     <div class="projects-grid">
 
+      <div class="project-card highlight">
+        <h3>GradeCap</h3>
+        <p>
+          An all-in-one academic companion app to calculate CGPA, track attendance,
+          and plan exams with a distraction-free interface.
+        </p>
+        <p><strong>Tech:</strong> Flutter, Dart</p>
+        <p><strong>What I learned:</strong> App architecture, state handling, Git workflow</p>
+        <a href="https://github.com/Shivam1902-tech/gradecap" target="_blank">GitHub</a>
+      </div>
+
       <div class="project-card">
         <h3>Nostalgia</h3>
         <p>
-          A Flutter-based Android application focused on memory-driven user experience.
-          Built with clean UI, smooth navigation, and proper asset management.
+          A Flutter-based Android app focused on memory-driven user experience with clean UI.
         </p>
         <p><strong>Tech:</strong> Flutter, Dart</p>
-        <p><strong>What I learned:</strong> App structuring, UI consistency, APK build & testing</p>
+        <p><strong>What I learned:</strong> Asset management, APK build & testing</p>
         <a href="https://github.com/Shivam1902-tech/nostalgia-app" target="_blank">GitHub</a>
       </div>
 
       <div class="project-card">
         <h3>Life Simulator</h3>
         <p>
-          Decision-based Android app that simulates daily life choices and dynamically
-          updates life statistics.
+          A decision-based Android app simulating daily life choices and dynamic statistics.
         </p>
         <p><strong>Tech:</strong> Flutter, Dart</p>
-        <p><strong>What I learned:</strong> Logic-driven features, reusable widgets</p>
+        <p><strong>What I learned:</strong> Logic-driven UI, reusable widgets</p>
         <a href="https://github.com/Shivam1902-tech/life-simulator-app" target="_blank">GitHub</a>
       </div>
 
       <div class="project-card">
         <h3>Signal Generator & Plotter</h3>
         <p>
-          Python application to generate and visualize sine, square, and triangular signals
-          with adjustable parameters.
+          Python application to generate and visualize sine, square, and triangular signals.
         </p>
         <p><strong>Tech:</strong> Python, NumPy, Matplotlib</p>
-        <p><strong>What I learned:</strong> Signal modeling, plotting, parameter control</p>
       </div>
 
       <div class="project-card">
         <h3>Digital Modulation Visualizer</h3>
         <p>
-          Python-based visualization tool for ASK, FSK, and BPSK digital modulation techniques.
+          Visualization tool for ASK, FSK, and BPSK digital modulation techniques.
         </p>
         <p><strong>Tech:</strong> Python, NumPy, Matplotlib</p>
-        <p><strong>What I learned:</strong> Digital communication concepts, waveform analysis</p>
       </div>
 
     </div>
@@ -110,62 +123,61 @@
     <div class="project-card">
       <h3>Research Head — Association for Cyber Security (ACS)</h3>
       <p>
-        Led research-oriented technical activities related to digital systems and logic design.
-        Worked on analysis, documentation, and technical exploration.
+        Led research-oriented technical activities related to digital systems.
       </p>
     </div>
 
     <div class="project-card">
       <h3>Content Writing Intern — InAmigoes</h3>
       <p>
-        Created and edited digital content, improving structured communication and consistency
-        in a professional work environment.
+        Created and edited professional digital content.
       </p>
     </div>
   </section>
 
   <!-- SKILLS -->
   <section id="skills" class="fade-in">
-  <h2>Skills</h2>
+    <h2>Skills</h2>
 
-  <h4>App Development</h4>
-  <ul class="skills">
-    <li>Flutter</li>
-    <li>Dart</li>
-    <li>Android App Development</li>
-    <li>UI Development</li>
-  </ul>
+    <h4>App Development</h4>
+    <ul class="skills">
+      <li>Flutter</li>
+      <li>Dart</li>
+      <li>Android Development</li>
+      <li>UI Design</li>
+    </ul>
 
-  <h4>Programming</h4>
-  <ul class="skills">
-    <li>Python</li>
-    <li>C++ (Basic)</li>
-  </ul>
+    <h4>Programming</h4>
+    <ul class="skills">
+      <li>Python</li>
+      <li>C++ (Basic)</li>
+    </ul>
 
-  <h4>ECE Fundamentals</h4>
-  <ul class="skills">
-    <li>Digital Logic</li>
-    <li>Signals & Systems</li>
-    <li>Communication Engineering</li>
-  </ul>
+    <h4>ECE Fundamentals</h4>
+    <ul class="skills">
+      <li>Digital Logic</li>
+      <li>Signals & Systems</li>
+      <li>Communication Engineering</li>
+    </ul>
 
-  <h4>Tools</h4>
-  <ul class="skills">
-    <li>Git & GitHub</li>
-    <li>MATLAB</li>
-    <li>Arduino</li>
-  </ul>
-</section>
-
+    <h4>Tools</h4>
+    <ul class="skills">
+      <li>Git & GitHub</li>
+      <li>MATLAB</li>
+      <li>Arduino</li>
+    </ul>
+  </section>
 
   <!-- RESUME -->
   <section id="resume" class="fade-in">
     <h2>Resume</h2>
     <p>You can view or download my resume below.</p>
 
-    <a href="resume/Shivam_Yadav_Resume.pdf" target="_blank" class="resume-btn">
-      View Resume
-    </a>
+    <div class="hero-links">
+      <a href="resume/ShivamResume.pdf" download class="resume-btn">
+        Download Resume
+      </a>
+    </div>
   </section>
 
   <!-- CONTACT -->
@@ -182,22 +194,19 @@
 
   <!-- DARK MODE SCRIPT -->
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", () => {
       const body = document.body;
       const toggleBtn = document.getElementById("themeToggle");
 
-      if (localStorage.getItem("theme") === "dark") {
-        body.classList.add("dark");
-      }
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") body.classList.add("dark");
 
-      toggleBtn.addEventListener("click", function () {
+      toggleBtn.addEventListener("click", () => {
         body.classList.toggle("dark");
-
-        if (body.classList.contains("dark")) {
-          localStorage.setItem("theme", "dark");
-        } else {
-          localStorage.setItem("theme", "light");
-        }
+        localStorage.setItem(
+          "theme",
+          body.classList.contains("dark") ? "dark" : "light"
+        );
       });
     });
   </script>
